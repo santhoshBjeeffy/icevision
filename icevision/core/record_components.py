@@ -418,7 +418,7 @@ class MasksRecordComponent(RecordComponent):
 
     def _builder_template(self) -> List[str]:
         return ["record{task}add_masks(<Sequence[Mask]>)"]
-
+      
 
 class SemanticMasksRecordComponent(RecordComponent):
     def __init__(self, task=tasks.segmentation):
@@ -459,7 +459,7 @@ class SemanticMasksRecordComponent(RecordComponent):
 
     def _builder_template(self) -> List[str]:
         return ["record{task}set_masks(<Sequence[Mask]>)"]
-
+      
 
 class AreasRecordComponent(RecordComponent):
     def __init__(self, task=tasks.detection):
